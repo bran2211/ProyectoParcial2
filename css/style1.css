@@ -1,0 +1,111 @@
+/* Estilos globales para el index */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e3c54;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #203a43;
+    padding: 5px; /* Reducido aún más */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 1.8em; /* Reducción del tamaño de fuente */
+    color: #f5f7fa;
+    margin: 0;
+}
+
+p.header-subtitle {
+    color: #adb5bd;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Estilos del índice */
+.index-section {
+    padding: 30px 10px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #243b55, #141e30);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.index-section h2 {
+    font-size: 2em;
+    color: #f5f7fa;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.index-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #adb5bd;
+    line-height: 1.6;
+}
+
+.index-section img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.index-section img:hover {
+    transform: scale(1.05);
+}
+
+.formula-container {
+    background-color: #112b39;
+    padding: 15px;
+    border-radius: 10px;
+    color: #f5f7fa;
+    text-align: left;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.formula-container strong {
+    color: #81d4fa;
+    font-size: 1.2em;
+}
+
+a.back-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 15px;
+    background-color: #2a9d8f;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.back-button:hover {
+    background-color: #264653;
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #141e30;
+    color: #adb5bd;
+}
+
+/* Mejorar el aspecto visual */
+.index-section:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}

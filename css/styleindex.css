@@ -1,0 +1,139 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+/* Estilos globales */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e3c54;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #203a43;
+    padding: 10px; /* Reducir altura */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #f5f7fa;
+    margin: 0;
+}
+
+p {
+    color: #adb5bd;
+    margin-top: 10px;
+}
+
+/* Contenedor de los formularios en línea recta y centrados */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre formularios */
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.tema {
+    background: linear-gradient(145deg, #243b55, #141e30);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 350px; /* Ajuste del ancho */
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.tema:hover {
+    transform: scale(1.05);
+}
+
+h3 {
+    color: #f5f7fa;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f5f7fa;
+    color: #333;
+    font-size: 1em;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #203a43;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3a6073;
+    transform: translateY(-5px);
+}
+
+button[type="reset"] {
+    background-color: #a53737;
+}
+
+button[type="reset"]:hover {
+    background-color: #cc4b4b;
+}
+
+footer {
+    background-color: #141e30;
+    text-align: center;
+    color: #adb5bd;
+    padding: 20px;
+    margin-top: auto; /* Hace que el footer se mantenga en la parte inferior */
+}
+
+.back-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 15px;
+    background-color: #2a9d8f;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #264653;
+    transform: translateY(-5px);
+}
+

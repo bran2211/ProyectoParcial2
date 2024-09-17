@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimiento Rectilíneo Uniformemente Variado (MRUV)</title>
+    <link rel="stylesheet" href="css/styleindex.css">
+</head>
+<body>
+
+    <header>
+        <h1>Movimiento Rectilíneo Uniformemente Variado (MRUV)</h1>
+        <p>Calcule la velocidad final, la distancia o la aceleración con los siguientes formularios.</p>
+    </header>
+
+    <section class="grid-container">
+        <!-- MRUV Tema 1: Velocidad Final -->
+        <div class="tema">
+            <h3>Calcular Velocidad Final</h3>
+            <form id="mruv-velocidad-final">
+                <label for="vi1">Velocidad Inicial (m/s):</label>
+                <input type="number" id="vi1" required>
+                <label for="aceleracion1">Aceleración (m/s²):</label>
+                <input type="number" id="aceleracion1" required>
+                <label for="tiempo1">Tiempo (s):</label>
+                <input type="number" id="tiempo1" required>
+                <button type="button" onclick="calcularVelocidadFinal()">Calcular</button>
+                <button type="reset">Limpiar</button>
+            </form>
+            <p id="resultado1"></p>
+        </div>
+
+        <!-- MRUV Tema 2: Distancia -->
+        <div class="tema">
+            <h3>Calcular Distancia</h3>
+            <form id="mruv-distancia">
+                <label for="vi2">Velocidad Inicial (m/s):</label>
+                <input type="number" id="vi2" required>
+                <label for="tiempo2">Tiempo (s):</label>
+                <input type="number" id="tiempo2" required>
+                <label for="aceleracion2">Aceleración (m/s²):</label>
+                <input type="number" id="aceleracion2" required>
+                <button type="button" onclick="calcularDistancia()">Calcular</button>
+                <button type="reset">Limpiar</button>
+            </form>
+            <p id="resultado2"></p>
+        </div>
+
+        <!-- MRUV Tema 3: Aceleración -->
+        <div class="tema">
+            <h3>Calcular Aceleración</h3>
+            <form id="mruv-aceleracion">
+                <label for="vi3">Velocidad Inicial (m/s):</label>
+                <input type="number" id="vi3" required>
+                <label for="vf3">Velocidad Final (m/s):</label>
+                <input type="number" id="vf3" required>
+                <label for="tiempo3">Tiempo (s):</label>
+                <input type="number" id="tiempo3" required>
+                <button type="button" onclick="calcularAceleracion()">Calcular</button>
+                <button type="reset">Limpiar</button>
+            </form>
+            <p id="resultado3"></p>
+        </div>
+    </section>
+
+    <!-- Botón para volver al inicio -->
+    <div style="text-align: center;">
+        <a href="index.html" class="back-button">Volver al Inicio</a>
+    </div>
+
+    <footer>
+        <p>Branly Alva - Correo: obran2211@gmail.com</p>
+    </footer>
+
+    <script src="js/mruv.js"></script>
+</body>
+</html>

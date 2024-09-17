@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimiento Rectilíneo Uniforme (MRU)</title>
+    <link rel="stylesheet" href="css/styleindex.css">
+</head>
+<body>
+
+    <header>
+        <h1>Movimiento Rectilíneo Uniforme (MRU)</h1>
+        <p>Calcule la velocidad, distancia o el tiempo con los siguientes formularios.</p>
+    </header>
+
+    <section class="grid-container">
+        <!-- MRU Tema 1: Velocidad -->
+        <div class="tema">
+            <h3>Calcular Velocidad</h3>
+            <form id="mru-velocidad">
+                <label for="distancia1">Distancia (m):</label>
+                <input type="number" id="distancia1" required>
+                <label for="tiempo1">Tiempo (s):</label>
+                <input type="number" id="tiempo1" required>
+                <button type="button" onclick="calcularVelocidad()">Calcular</button>
+                <button type="reset">Limpiar</button>
+            </form>
+            <p id="resultado1"></p>
+        </div>
+
+        <!-- MRU Tema 2: Distancia -->
+        <div class="tema">
+            <h3>Calcular Distancia</h3>
+            <form id="mru-desplazamiento">
+                <label for="velocidad2">Velocidad (m/s):</label>
+                <input type="number" id="velocidad2" required>
+                <label for="tiempo2">Tiempo (s):</label>
+                <input type="number" id="tiempo2" required>
+                <button type="button" onclick="calcularDistancia()">Calcular</button>
+                <button type="reset">Limpiar</button>
+            </form>
+            <p id="resultado2"></p>
+        </div>
+
+        <!-- MRU Tema 3: Tiempo -->
+        <div class="tema">
+            <h3>Calcular Tiempo</h3>
+            <form id="mru-tiempo">
+                <label for="distancia3">Distancia (m):</label>
+                <input type="number" id="distancia3" required>
+                <label for="velocidad3">Velocidad (m/s):</label>
+                <input type="number" id="velocidad3" required>
+                <button type="button" onclick="calcularTiempo()">Calcular</button>
+                <button type="reset">Limpiar</button>
+            </form>
+            <p id="resultado3"></p>
+        </div>
+    </section>
+
+    <!-- Botón para volver al inicio -->
+    <div style="text-align: center;">
+        <a href="index.html" class="back-button">Volver al Inicio</a>
+    </div>
+
+    <footer>
+        <p>Branly Alva - Correo: obran2211@gmail.com</p>
+    </footer>
+
+    <script src="js/mru.js"></script>
+</body>
+</html>
+
